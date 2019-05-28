@@ -1,4 +1,9 @@
-<h1><%= @song.firstdance %></h1>
-<br />
-<h2><%= @song.artist %></h2>
+<% @songs.each do |song| %>
+ <div>
+    <h1><%= song.firstdance %></h1><br />
+    <i><%= song.artist %></i><br />
+  </div>
 
+  <hr />
+
+<% end %>
