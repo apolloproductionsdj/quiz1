@@ -1,0 +1,7 @@
+<h1>Enter Your Song</h1>
+<%= simple_form_for @song do |f| %>
+  <%= f.input :firstdance %>
+  <%= f.input :artist %>
+  <br />
+  <%= f.submit 'Create', class: 'btn btn-primary' %>
+<% end %>
